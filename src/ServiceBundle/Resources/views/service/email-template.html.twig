@@ -1,0 +1,46 @@
+<html>
+<head>
+   
+
+</head>
+</html>
+<body>
+
+<h1>{{ user.username }}</h1>
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <table class="table table-condensed table-hover">
+                <thead>
+                <tr>
+                    <td>Nom Service</td>
+                    <td>Nom agent</td>
+                    <td>Type</td>
+                    <td>Prix</td>
+                    <td>Description</td>
+                    <td>Etat</td>
+                    <td>Contact</td>
+                    <td>Region</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{ service.nomService }}</td>
+                    <td>{{ service.nomAgent }}</td>
+                    <td>{{ service.type }}</td>
+                    <td>{{ service.prix }}</td>
+                    <td>{{ service.description }}</td>
+                    <td>{{ service.etat }}</td>
+                    <td>{{ service.contact }}</td>
+                    <td>{{ service.region }}</td>
+
+                </tr>
+ {{ barcode({code: 'SUNFLOWER_by_SADDEM_MHIRI', type: 'qrcode', format: 'svg', width: 10, height: 10, color: 'black'}) }}
+
+ </tbody>
+</table>
+</div>
+</div>
+</div>
+
+</body>

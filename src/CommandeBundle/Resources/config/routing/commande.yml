@@ -1,0 +1,133 @@
+commande_index:
+    path:     /
+    defaults: { _controller: "CommandeBundle:Commande:index" }
+    methods:  GET
+
+commande_show:
+    path:     /{idCmd}/show
+    defaults: { _controller: "CommandeBundle:Commande:showpp" }
+    methods:  GET
+
+commande_new:
+    path:     /new
+    defaults: { _controller: "CommandeBundle:Commande:new" }
+    methods:  [GET, POST]
+
+commande_newm:
+    path:     /newM
+    defaults: { _controller: "CommandeBundle:Commande:newM" }
+
+commande_edit:
+    path:     /{idCmd}/edit
+    defaults: { _controller: "CommandeBundle:Commande:edit" }
+    methods:  [GET, POST]
+
+commande_delete:
+    path:     /{idCmd}/delete
+    defaults: { _controller: "CommandeBundle:Commande:delete" }
+    methods:  DELETE
+
+commande_invoice:
+    path:     /{idCmd}/invoice
+    defaults: { _controller: "CommandeBundle:Commande:invoice" }
+    methods:  GET
+
+commande_panier:
+    path:     /panier
+    defaults: { _controller: "CommandeBundle:Commande:panier" }
+    methods:  GET
+
+commande_panierm:
+    path:     /panierm
+    defaults: { _controller: "CommandeBundle:Commande:panierM" }
+
+commande_delpanier:
+    path:     /panier/{idLigneCmd}
+    defaults: { _controller: "CommandeBundle:Commande:delpanier" }
+    methods:  GET
+
+commande_ajouter:
+    path:  /ajouter/{idProduit}
+    defaults: { _controller: "CommandeBundle:Commande:ajouter" }
+    methods:  GET
+
+commande_ajouterm:
+    path:  /ajouterM/{idProduit}/{id}
+    defaults: { _controller: "CommandeBundle:Commande:ajouterM" }
+
+panier_delete:
+    path:     /{idProduit}/delete
+    defaults: { _controller: "CommandeBundle:Commande:deleteP" }
+    methods:  DELETE
+
+panier_deleteM:
+    path:     /{idLigneCmd}/delM
+    defaults: { _controller: "CommandeBundle:Commande:deletePM" }
+
+produite_index:
+    path:     /Cmd
+    defaults: { _controller: "CommandeBundle:Commande:Cmd" }
+    methods:  GET
+
+add_qte:
+    path:  /add/{idProduit}
+    defaults: { _controller: "CommandeBundle:Commande:addqte" }
+    methods:  GET
+
+add_qteM:
+    path:  /addM/{idProduit}
+    defaults: { _controller: "CommandeBundle:Commande:addqteM" }
+
+del_qte:
+    path:  /del/{idProduit}
+    defaults: { _controller: "CommandeBundle:Commande:delqte" }
+    methods:  GET
+
+del_qteM:
+    path:  /delM/{idProduit}
+    defaults: { _controller: "CommandeBundle:Commande:delqteM" }
+
+commande_final:
+    path:  /final/
+    defaults: { _controller: "CommandeBundle:Commande:final" }
+    methods:  [GET, POST]
+
+commande_coupon:
+    path:  /finale/
+    defaults: { _controller: "CommandeBundle:Commande:coupon" }
+    methods:  [GET, POST]
+
+commande_couponM:
+    path:  /finaleM/{coupon}
+    defaults: { _controller: "CommandeBundle:Commande:couponM" }
+
+commande_list:
+    path:     /mycmd
+    defaults: { _controller: "CommandeBundle:Commande:listcmd" }
+    methods:  GET
+
+commande_listM:
+    path:     /mycmdM
+    defaults: { _controller: "CommandeBundle:Commande:listcmdM" }
+
+commande_showuser:
+    path:     /{idCmd}/showuser
+    defaults: { _controller: "CommandeBundle:Commande:show" }
+    methods:  GET
+
+commande_showuserM:
+    path:     /{idCmd}/showuserM
+    defaults: { _controller: "CommandeBundle:Commande:showM" }
+
+userLog:
+    path:     /userlogin/{email}/{password}
+    defaults: { _controller: "CommandeBundle:Commande:userlogin" }
+    methods:  [GET, POST]
+
+userid:
+    path:     /userid/{username}
+    defaults: { _controller: "CommandeBundle:Commande:idmob" }
+
+all:
+    path:     /all/
+    defaults: { _controller: "CommandeBundle:Commande:all" }

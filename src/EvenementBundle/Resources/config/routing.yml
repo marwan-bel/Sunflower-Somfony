@@ -1,0 +1,72 @@
+Evenement_Dashboard:
+    path:     /admin/
+    defaults: { _controller: EvenementBundle:Evenement:stat }
+Evenement_Dashboard2:
+    path:     /admin/Dashboard
+    defaults: { _controller: EvenementBundle:Evenement:stat }
+evenement_index:
+    path:     /admin/Afficher_eve
+    defaults: { _controller: EvenementBundle:Evenement:index }
+evenement_new:
+    path:     /admin/Ajouter_eve
+    defaults: { _controller: EvenementBundle:Evenement:new }
+evenement_show:
+    path:     /admin/Affichage_eve/{idEvenement}
+    defaults: { _controller: EvenementBundle:Evenement:show }
+evenement_edit:
+    path:     /admin/Modifier_eve/{idEvenement}
+    defaults: { _controller: EvenementBundle:Evenement:edit }
+evenement_delete:
+    path:     /admin/Supprimer_eve/{idEvenement}
+    defaults: { _controller: EvenementBundle:Evenement:delete }
+evenement_user:
+    path:     /user
+    defaults: { _controller: EvenementBundle:Evenement:user }
+evenement_useraff:
+    path:     /useraff/{id}
+    defaults: { _controller: EvenementBundle:Evenement:useraff }
+evenement_userr:
+    path:     /user/{id}
+    defaults: { _controller: EvenementBundle:Evenement:userr }
+evenement_showpar:
+    path:     /admin/Affichage_par/{idEvenement}
+    defaults: { _controller: EvenementBundle:Evenement:showpar }
+Affichermobile:
+    path:     /Affichermobile
+    defaults: { _controller: EvenementBundle:Evenement:Affichermobile }
+verifmobile:
+    path:     /verif
+    defaults: { _controller: EvenementBundle:Evenement:verifmobile }
+ajouterparmobile:
+    path:     /ajouterpar
+    defaults: { _controller: EvenementBundle:Evenement:ajouterparmobile }
+supprimerparmobile:
+    path:     /supprimerpar
+    defaults: { _controller: EvenementBundle:Evenement:supprimerparmobile }
+nbrparmobile:
+    path:     /nbrpar
+    defaults: { _controller: EvenementBundle:Evenement:nbrparmobile }
+verifevemobile:
+    path:     /verifeve
+    defaults: { _controller: EvenementBundle:Evenement:verifevemobile }
+ajouterlikemobile:
+    path:     /ajouterlike
+    defaults: { _controller: EvenementBundle:Evenement:ajouterlikemobile }
+supprimerlikemobile:
+    path:     /supprimerlike
+    defaults: { _controller: EvenementBundle:Evenement:supprimerlikemobile }
+ajouterdislikemobile:
+    path:     /ajouterdislike
+    defaults: { _controller: EvenementBundle:Evenement:ajouterdislikemobile }
+supprimerdislikemobile:
+    path:     /supprimerdislike
+    defaults: { _controller: EvenementBundle:Evenement:supprimerdislikemobile }
+Afficherrechmobile:
+    path:     /Afficherrech
+    defaults: { _controller: EvenementBundle:Evenement:Afficherrechmobile }
+nbrlikemobile:
+    path:     /nbrlike
+    defaults: { _controller: EvenementBundle:Evenement:nbrlikemobile }
+nbrdislikemobile:
+    path:     /nbrdislike
+    defaults: { _controller: EvenementBundle:Evenement:nbrdislikemobile }

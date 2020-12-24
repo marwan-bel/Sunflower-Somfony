@@ -1,0 +1,21 @@
+favoris_indexmob:
+    path:     /
+    defaults: { _controller: "ProduitBundle:Favoris:indexmob" }
+    methods:  [GET, POST]
+
+favoris_newmob:
+    path:     /new/{idProduit}
+    defaults: { _controller: "ProduitBundle:Favoris:newmob" }
+    methods:  [GET, POST]
+
+
+favoris_existmob:
+    path:     /exist/{idProduit}
+    defaults: { _controller: "ProduitBundle:Favoris:existmob" }
+    methods:  [GET, POST]
+
+
+favoris_deletemob:
+    path:     /delete/{idFavoris}
+    defaults: { _controller: "ProduitBundle:Favoris:deletemob" }
+    methods:  [GET, POST]

@@ -1,0 +1,24 @@
+produit_indexfrontmob:
+    path:     /
+    defaults: { _controller: "ProduitBundle:Produit:indexfrontmob" }
+    methods:  [GET, POST]
+
+produit_categoriemob:
+    path:     /categorie
+    defaults: { _controller: "ProduitBundle:Produit:categoriemob" }
+    methods:  [GET, POST]
+
+produit_filtermob:
+    path:     /filter/{nomCategorie}
+    defaults: { _controller: "ProduitBundle:Produit:filtermob" }
+    methods:  [GET, POST]
+
+produit_mostratedmob:
+    path:     /mostrated
+    defaults: { _controller: "ProduitBundle:Produit:mostratedmob" }
+    methods:  [GET, POST]
+
+produit_newestmob:
+    path:     /newest
+    defaults: { _controller: "ProduitBundle:Produit:newestmob" }
+    methods:  [GET, POST]

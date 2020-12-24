@@ -1,0 +1,109 @@
+forum_sujet:
+    resource: "@ForumBundle/Resources/config/routing/sujet.yml"
+    prefix:   /sujet
+##########################baseback###########################
+forum_homepage:
+    path:     /
+    defaults: { _controller: ForumBundle:Default:index }
+##########################basefront###########################
+forum_frontpage:
+    path:     /front
+    defaults: { _controller: ForumBundle:Default:indexf}
+    methods:  GET
+##########################basefront Sujet###########################
+
+forum_list:
+    path:     /forumlist
+    defaults: { _controller: "ForumBundle:Sujet:indexforumlist" }
+    methods:  GET
+
+forum_list_filter:
+    path:     /forumlist/{idCategorieSujet}
+    defaults: { _controller: "ForumBundle:Sujet:indexforumliste" }
+    methods:  GET
+
+forum_list_tri:
+    path:     /forumlisttri
+    defaults: { _controller: "ForumBundle:Sujet:afficherTriFront" }
+    methods:  GET
+
+############################ ROUTING COMMENTAIRE ####################################
+############################################################################
+
+forum_detail:
+    path:     /forumdetail/{idSujet}
+    defaults: { _controller: "ForumBundle:Sujet:indexforumdetail"}
+
+forum_detail_comment:
+    path:     /forumdetails/{idSujet}
+    defaults: { _controller: "ForumBundle:Commentaire:AjouterCommentaire"}
+
+forum_detail_comment_modif:
+    path:     /forumdetails/modif/{idCom}
+    defaults: { _controller: "ForumBundle:Commentaire:ModifierCommentaire"}
+
+############################ ROUTING Sujet Web Service ####################################
+############################################################################
+aff_list_sujWS:
+    path:     /affsujWS
+    defaults: { _controller: "ForumBundle:SujetWS:AfflistSujetWS"}
+
+aff_list_commentWS:
+    path:     /affcomWS/{idSujet}
+    defaults: { _controller: "ForumBundle:SujetWS:afficherCommentaireWS"}
+
+ajout_commentWS:
+    path:     /ajoutcommentWS/{idSujet}/{commentaires}/{nomSujet}
+    defaults: { _controller: "ForumBundle:SujetWS:AjouterCommentaireWS"}
+
+supp_commentWS:
+    path:     /suppcomWS/{idCom}
+    defaults: { _controller: "ForumBundle:SujetWS:SupprimerCommentaireWS"}
+
+modif_commentWS:
+    path:     /modifcomWS/{idCom}/{commentaires}
+    defaults: { _controller: "ForumBundle:SujetWS:ModifierCommentaireWS"}
+
+list_CategorieSujet:
+    path:     /listCategorieWS/
+    defaults: { _controller: "ForumBundle:SujetWS:ListCategSujetWS"}
+
+filter_par_categWS:
+    path:     /filtrerWS/{nomCateg}
+    defaults: { _controller: "ForumBundle:SujetWS:FiltrerSujetWS"}
+
+ajout_jaimeWS:
+    path:     /jaimeWS/{idCom}
+    defaults: { _controller: "ForumBundle:SujetWS:AjouterJaimeWS"}
+
+ajout_signalWS:
+    path:     /dislikeWS/{idCom}
+    defaults: { _controller: "ForumBundle:SujetWS:AjouterSignalWS"}
+
+aff_VerifNbrLikeDislikeWS:
+    path:     /nbrLikeDislikeVerif
+    defaults: { _controller: "ForumBundle:SujetWS:AffTableVerifLikeDislikeWS"}
+
+ajout_LikeDislikeWS:
+    path:     /AjoutLikeDislikeWS/{idUser}/{idCom}
+    defaults: { _controller: "ForumBundle:SujetWS:AjouterLikeDislikeWS"}
+
+ajout_nbrVueWS:
+    path:     /AjoutnbrVueWS/{idSujet}
+    defaults: { _controller: "ForumBundle:SujetWS:AjouterNbrVueWS"}
+
+ajout_VueWS:
+    path:     /AjoutVueWS/{idUser}/{idSujet}
+    defaults: { _controller: "ForumBundle:SujetWS:AjouterVueWS"}
+
+aff_VerifNbrVueWS:
+    path:     /nbrVueVerif
+    defaults: { _controller: "ForumBundle:SujetWS:AffTableVerifNbrVueWS"}
+
+
+
+
+
+
+
+

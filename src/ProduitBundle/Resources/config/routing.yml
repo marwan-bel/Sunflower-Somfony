@@ -1,0 +1,19 @@
+produit_produit:
+    resource: "@ProduitBundle/Resources/config/routing/produit.yml"
+    prefix:   /produit
+
+produit_produitfront:
+    resource: "@ProduitBundle/Resources/config/routing/produitfront.yml"
+    prefix:   /produitfront
+
+produit_favoris:
+    resource: "@ProduitBundle/Resources/config/routing/favoris.yml"
+    prefix:   /favoris
+
+produit_produitfrontmob:
+    resource: "@ProduitBundle/Resources/config/routing/produitfrontmob.yml"
+    prefix:   /mob/produitfront
+
+produit_favorismob:
+    resource: "@ProduitBundle/Resources/config/routing/favorismob.yml"
+    prefix:   /mob/favoris
